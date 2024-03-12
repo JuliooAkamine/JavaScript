@@ -4,19 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando Variáveis</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <h1>Documento JavaScript</h1>
-    <p></p>
+    
     <script>
         let curso = "Desenvolvedor Front-end";
+        let nome = "Júlio Akamine"
         let data = new Date();
-        
-        document.write(curso);
-        console.log(data);
-        window.alert (data);
+
+        let dia = data.getDate();
+        let mes = data.getMonth()+1; //é preciso  incrementar uma posição para dar um get na lista correta.
+        let ano = data.getFullYear();
+        let datafull = data.toLocaleDateString()
+        let hora = data.toLocaleTimeString()
+      
+        //document.write(ano);
+        //console.log(data);
+        //window.alert (curso);
+
+        //document.write("<p>Olá me chamo <b>"+nome+"</b>, estudo "+curso+", No SENAC. Hoje é dia: "+dia+"/"+mes+"/"+ano+" .</p>")
+
+        document.write("<p>Olá me chamo <b>"+nome+"</b>, estudo "+curso+", No SENAC. Hoje é dia: "+datafull+" .</p>")
+
+        document.write("<h1>Agora são "+hora+"</h1>")
+
+       // document.write("<h1>"+datafull+"</h1>") 
+
+
+        console.log ("Olá me chamo "+nome+", estudo um curso de "+curso+", No SENAC. Hoje é dia: "+datafull+" .")
+
+        console.log(hora)
         
     </script>
-    
+     
 </body>
 </html>

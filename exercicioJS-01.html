@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <script>
+        
+        let nome = window.prompt("qual seu nome")
+        let idade = Number(window.prompt("qual a sua idade em numeros?"))
+        let familiar = window.prompt("qual o nome do seu familiar mais proximo?")
+        let data = new Date()
+        let datafull = data.toLocaleString()
+        let idadefamiliar = Number(window.prompt("qual a idade do seu familiar mais proximo em numero?"))
+
+
+       document.write(
+        
+       "<p>Meu nome é: <b>"+nome+"</b> <br> Minha idade é: <b>"+idade+"</b> <br> O nome do meu familiar é: <b>"+familiar+"</b> <br> Sua idade é: <b>"+idadefamiliar+"</b> <br> data de inscrição: <b>"+datafull+"</b> </p>"
+       
+       )
+
+       document.write("<h1>A soma das idades é: "+(idade + idadefamiliar)+"</h1>")
+
+       
+        
+
+        
+    </script>
+</body>
+</html>
