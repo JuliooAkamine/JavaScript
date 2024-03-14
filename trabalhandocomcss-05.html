@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com css</title>
+</head>
+
+<body>
+    <h1 id="titulo">Trabalhando com CSS em javascript</h1>
+
+    <div>
+        <button onclick="document.getElementById('titulo').style.color = 'red' ">
+            alterar a cor do Titulo
+        </button>
+        <p id="paragrafo1">Texto com algum tipo de destaque.</p>
+    </div>
+
+    <div>
+        <button
+            onclick="document.getElementById('paragrafo1').style.color = 'pink' ; document.getElementById('paragrafo1').style.textTransform = 'uppercase' ">
+            Alterar a cor do Parágrafo
+        </button>
+
+        <p id="paragrafo2">Texto com muito destaque</p>
+    </div>
+
+    <div>
+        <button
+            onclick="document.getElementById('paragrafo2').style.fontSize = '2em' ; document.getElementById('paragrafo2').style.fontWeight = '1000'">
+            Alterar o tamanho de fonte
+        </button>
+        <button onclick="document.getElementById('paragrafo2').style.fontFamily = 'cursive'">
+            Alterar a fonte
+        </button>
+    </div>
+
+    <hr />
+
+    <p id="texto">Texto desenvolvido por um clique</p>
+    <button onclick="getElementById('texto').innerHTML = 'texto Transformado'">
+        Clique aqui
+    </button>
+
+    <div>
+        <button
+            onclick="getElementById('ocultar').src = 'imagens/luz.jpg' ; document.getElementById('ocultar').style = 'hide' ">
+            Ligar
+        </button>
+
+        <button id="btn-oculto" onclick="getElementById ('btn-oculto').style.display = 'none' ; getElementById('ocultar').style.display = 'none' ; getElementById('btn-hide').style.display = 'inline-block' "  >
+            Ocultar
+        </button>
+
+        <button id="btn-hide" onclick="getElementById('ocultar').style.display = '' ; getElementById('btn-oculto').style.display = 'inline-block' ; getElementById('btn-hide').style.display = 'none'">
+            Mostrar
+        </button>
+        <button onclick="getElementById('ocultar').src = 'imagens/apagada.jpg' ">
+            Apagar
+        </button>
+    </div>
+
+    <img id="ocultar" src="imagens/luz.jpg" alt="imagem ilustrativa lampada ligada" />
+
+    <script></script>
+</body>
+
+</html>
