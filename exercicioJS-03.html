@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Cores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: poppins, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        div{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        #azul{
+            transition: 400ms;
+            border-radius: 4px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: white;
+            background-color: blue;
+            border: none;
+            height: 60px;
+            width: 100px;
+            cursor: pointer;
+
+        }
+
+        
+
+        #verde{
+            transition: 400ms;
+            border-radius: 4px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: white;
+            background-color: green;
+            border: none;
+            height: 60px;
+            width: 100px;
+            cursor: pointer;
+
+
+        }
+
+        #laranja{
+            transition: 400ms;
+            border-radius: 4px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+            background-color: orange;
+            border: none;
+            height: 60px;
+            width: 100px;
+            cursor: pointer;
+
+        }
+
+        #laranja:hover{
+            transition: 400ms;
+            transform: scale(1.5);
+        }
+        #verde:hover{
+            transition: 400ms;
+            transform: scale(1.5);
+        }
+        #azul:hover{
+            transition: 400ms;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="texto"></h1>
+    <h1>Escolha a cor e exiba o significado</h1>
+
+    <div>
+        <button id="azul" onclick="document.body.style.backgroundColor = 'blue' ; document.getElementById('texto').innerHTML = 'Azul significa Harmonia e Maturidade' " >Azul</button>
+        
+        <button onclick="document.body.style.backgroundColor = 'green' ; document.getElementById('texto').innerHTML = 'verde significa saude e esperança' " id="verde">Verde</button>
+
+        <button onclick="document.body.style.backgroundColor = 'orange' ; document.getElementById('texto').innerHTML = 'laranja significa força e energia' " id="laranja">Laranja</button>
+    </div>
+
+    <script src="js/cores.js"></script>
+</body>
+</html>
