@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com funções</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+        }
+        div#area{
+            
+
+            font: normal;
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;  
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+          
+            
+        }
+        #area:hover{
+            scale: 1.5;
+            color: white;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseout="sair()" onmouseenter="entrar()">
+        interaja..
+
+    </div>
+
+    <script>
+        let a = window.document.getElementById('area')
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'blue'
+            a.style.scale ='1.5'
+            a.style.transition = '700ms'
+            
+        }
+
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+            a.style.scale ='1.5'
+            a.style.transition = '700ms'
+        }
+
+        a.addEventListener('click' , clicar)
+        
+        function clicar(){
+            a.innerText = 'clicou'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+            a.style.transition = '700ms'
+            a.style.scale ='1.5'
+        }
+    </script>
+</body>
+</html>
