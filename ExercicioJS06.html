@@ -5,17 +5,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabalhando com css</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97vh;
+            flex-direction: column;
+        }
+        img{
+            width: 300px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+            
+        }
+         
+    </style>
 </head>
 
 <body>
-    <div>
-        <img onclick="quebrar()" onmouseout="sair()" onmouseenter="passar()" id="apagada" src="imagens/apagada.jpg" alt="">
-    </div>
-    <div>
-        <img id="ligada" style="display: none;" src="imagens/luz.jpg" alt="">
-    </div>
-    <div>
-        <img id="quebrada" style="display: none;" src="imagens/quebrada.jpg" alt="">
+    <div id="container">
+        <div>
+            <img   onmouseenter="passar()" id="apagada" src="imagens/apagada.jpg" alt="">
+        </div>
+        <div>
+            <img onmouseout="sair()" onclick="quebrar()" id="ligada" style="display: none;" src="imagens/luz.jpg" alt="">
+        </div>
+        <div>
+            <img  id="quebrada" style="display: none;" src="imagens/quebrada.jpg" alt="">
+        </div>
+
+        <button onclick="resetar()">Reset</button>
     </div>
 
     <script src="js/lampada.js">
