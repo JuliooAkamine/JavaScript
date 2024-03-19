@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins, sans-serif;
+      }
+      body {
+        background-color: rgb(90, 203, 255);
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+      }
+      #container-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+
+        background-color: darkslategray;
+        width: 400px;
+        
+      }
+
+      #formcadastro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+        height: 90vh;
+      }
+
+      label {
+        color: white;
+        margin-bottom: 5px;
+      }
+      #nome,
+      #idade,
+      #cargo,
+      #salarioo {
+        text-align: center;
+        width: 300px;
+        height: 50px;
+        border-radius: 3px;
+        border: none;
+      }
+      #container-cargo,
+      #container-salario {
+        display: inline-block;
+      }
+
+      #container-nome,
+      #container-idade,
+      #container-cargo,
+      #container-salario {
+        display: flex;
+        flex-direction: column;
+      
+      }
+
+      #formficha {
+        display: none;
+      }
+
+      #salvar {
+        margin-top: 20px;
+        width: 300px;
+        height: 50px;
+        border-radius: 3px;
+        border: none;
+        transition: 400ms;
+      }
+      #salvar:hover {
+        background-color: rgb(109, 109, 109);
+        color: white;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: 200ms;
+      }
+      p {
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        padding-top: 11px;
+        text-align: center;
+        border-radius: 3px;
+      }
+
+      #formficha{
+        background-color: darkcyan;
+    
+        justify-content: center;
+      }
+
+      @media screen and (min-width:320px) {
+        #nome, #idade, #cargo, #salarioo {
+        width: 215px;
+        transition: 300ms;
+    }
+    p{
+        width: 230px;
+    }
+    h1{
+        font-size: 1.1em;
+    }
+
+    #container-main{
+        width: 280px;
+        transition: 300ms;
+    }
+    #salvar{
+        width: 215px;
+        transition: 300ms;
+    }
+
+}
+    @media screen and (min-width:425px){
+        #container-main{
+        width: 360px;
+        transition: 300ms;
+        
+
+    }
+    h1{
+        font-size: 1.2em;
+    }
+
+    #nome, #idade, #cargo, #salarioo {
+        width: 285px;
+        margin: 0 auto;
+        transition: 300ms;
+        
+    }
+    
+
+    #salvar{
+        width: 285px;
+    } }
+    @media screen and (min-width:768px){
+        #container-main{
+        width: 500px;
+        transition: 300ms;
+    }
+    #nome, #idade, #cargo, #salarioo, p {
+        width: 400px;
+        transition: 300ms;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+
+    #salvar{
+        width: 400px;
+        transition: 300ms;
+    }
+}
+    
+    </style>
+  </head>
+  <body>
+    <div id="container-main">
+      <form action="#" id="formcadastro">
+        <h1>Cadastrar colaborador</h1>
+        <div id="container-nome">
+          <label for="#">Nome: </label>
+          <input required type="text" id="nome" />
+        </div>
+        <div id="container-idade">
+          <label for="#">idade:</label>
+          <input required type="number" id="idade" />
+        </div>
+        <div id="container-cargo">
+          <label for="#">cargo:</label>
+          <input required type="text" id="cargo" />
+        </div>
+        <div id="container-salario">
+          <label for="#">salario:</label>
+          <input required type="number" id="salarioo" />
+        </div>
+        <input id="salvar" type="submit" value="salvar" />
+      </form>
+      <form action="#" id="formficha">
+        <div id="container-ficha">
+            <h1>Ficha do colaborador</h1>
+          <div id="nomecompleto">
+            <label for="#">Nome Completo:</label>
+            <p id="nomeficha"></p>
+          </div>
+
+          <div id="container-idadeficha">
+            <label for="#">Idade:</label>
+            <p id="idadeficha"></p>
+          </div>
+          <div id="container-cargoficha">
+            <label for="#">Cargo:</label>
+            <p id="cargoficha"></p>
+          </div>
+          <div id="container-salarioficha">
+            <label for="#">salario:</label>
+            <p id="salarioficha"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/cadastro.js"></script>
+  </body>
+</html>
