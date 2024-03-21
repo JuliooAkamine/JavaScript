@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #formcontato{
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <body>
+        <h1>Aula 10 - Arrays/Laço de Repetição (Exercicio de Revisão)</h1>
+        
+        <form id="formcontato" action="#">
+            <h1>formulario de contato</h1>
+            <input type="text" id="name" placeholder="">
+            <input type="email" id="email" placeholder>
+            <input type="tel" id="telefone" placeholder="">
+            <input type="text" id="assunto" placeholder="">
+            <textarea placeholder="" name="assunto" id="mensagem" cols="30" rows="10"></textarea>
+
+            <button id="enviar">enviar</button>
+        </form>
+        
+        <form id="formrecebido" action="#">
+            <h1>Lista de contatos(recebidos)</h1>
+            <table>
+                <tr>
+                    <th>Nome Completo:</th>
+                    <td id="namerecebido"></td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td id="emailrecebido"></td>
+                </tr>
+                <tr>
+                    <th>Telefone:</th>
+                    <td id="telefonerecebido" ></td>
+                </tr>
+                <tr>
+                    <th>Assunto:</th>
+                    <td id="assuntorecebido"></td>
+                </tr>
+                <tr>
+                    <th>Mensagem:</th>
+                    <td id="mensagemrecebida"></td>
+        
+                </tr>
+            </table>
+        
+            <script src="js/exerciciocadastro2.js"></script>
+        </form>
+            
+    
+</body>
+</html>

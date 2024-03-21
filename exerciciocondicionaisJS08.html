@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura condicional</title>
+ 
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="container">
+        <h1>Estrutura condicional</h1>
+    </div>
+ 
+    <script>
+        let nota1 = parseFloat(prompt('Digite a primeira nota:'))
+        let nota2 = parseFloat(prompt('Digite a segunda nota:'))
+        let media = (nota1 + nota2) / 2
+ 
+        document.write("A primeira nota foi: " +nota1.toFixed(2)+ "<br> segunda nota foi: " +nota2.toFixed(2)+"</br> Sua média é: "+media.toFixed(2))
+ 
+        if (media >= 6) {
+            document.write("<br><b>Aprovado!</b>")
+        } else {
+            document.write("<br><b>REPROVADO ;-; <br>Estude mais e Receba a inteligência🙌</b>")
+        }
+    </script>
+ 
+</body>
+</html>
