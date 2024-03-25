@@ -1,4 +1,19 @@
 var btncalculo = document.getElementById('calculo')
+var btntema = document.getElementById('tema')
+
+
+
+btntema.addEventListener('click', function(){
+
+    document.getElementById('container-form').style.backgroundColor = 'darkslategray'
+    document.getElementById('container-result').style.backgroundColor = 'darkslategray'
+    
+   
+
+})
+
+
+
 
 btncalculo.addEventListener('click' , function(){
 

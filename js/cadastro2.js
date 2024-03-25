@@ -36,6 +36,15 @@ btnenviar.addEventListener('click' , function(){
     let assunto = document.getElementById('assunto').value
     let mensagem = document.getElementById('mensagem').value
 
+    if(name && email && assunto && mensagem && number  === ''){
+        alert('preencha todos os campos para enviar')
+    }else{
+    let name = document.getElementById('name').value
+    let email = document.getElementById('email').value
+    let number = document.getElementById('number').value
+    let assunto = document.getElementById('assunto').value
+    let mensagem = document.getElementById('mensagem').value
+
     let name_recebido = document.getElementById('name_recebido')
     let email_recebido = document.getElementById('email_recebido')
     let number_recebido = document.getElementById('number_recebido')
@@ -47,6 +56,7 @@ btnenviar.addEventListener('click' , function(){
     number_recebido.innerHTML = number
     assunto_recebido.innerHTML = assunto
     mensagem_recebido.innerHTML = mensagem
+    }
 
 
 })
