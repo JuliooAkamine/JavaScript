@@ -179,8 +179,36 @@
 
   #tema{
     width: 150px;
-    margin: 0 auto;
+    margin: 15px auto;
+    border: none;
+    padding: 10px;
+    background-color: rgb(165, 165, 165);
+    color: white;
+    transition: 300ms;
+    cursor: pointer;
     
+  }
+  #tema:hover{
+    background-color: rgb(87, 87, 87);
+    transition: 300ms;
+  }
+
+  #temaclaro{
+    width: 150px;
+    margin: 15px auto;
+    display: none;
+
+    border: none;
+    padding: 10px;
+    background-color: rgb(84, 83, 83);
+    color: rgb(0, 0, 0);
+    transition: 300ms;
+    cursor: pointer;
+  }
+
+  #temaclaro:hover{
+    background-color: rgb(164, 164, 164);
+    transition: 300ms;
   }
 
   
@@ -190,6 +218,7 @@
   <!-- formulario para cadastro das notas -->
   <div id="container-form">
     <button id="tema">Mudar Tema</button>
+    <button id="temaclaro">Mudar Tema</button>
     <h1>Cadastro de Notas</h1>
     <form action="#" id="formnotas">
       <div class="divgeral">
@@ -221,16 +250,16 @@
     <!-- Formulario para cadastro2 -->
     <form action="#" id="formnotas2">
       <div class="divgeral">
-        <label for="#">Bimestre 1</label>
+        <label  for="#">Bimestre 1</label>
         <input max="10" type="number" id="b1" >
       </div>
       <div class="divgeral">
-        <label for="#">Bimestre 2</label>
+        <label  for="#">Bimestre 2</label>
         <input max="10" type="number" id="b2" >
       </div>
       <div class="divgeral">
         <label for="#">Bimestre 3</label>
-        <input max="10" type="number" id="b3" >
+        <input  max="10" type="number" id="b3" >
       </div>
       <div class="divgeral">
         <label for="#">Bimestre 4</label>
@@ -265,15 +294,15 @@
         <td>Situação</td>
       </tr>
       <tr>
-        <td class="recebido" id="nomerecebido"></td>
-        <td class="recebido" id="serierecebido"></td>
-        <td class="recebido" id="materiarecebido"></td>
-        <td class="recebido" id="b1recebido"></td>
-        <td class="recebido" id="b2recebido"></td>
-        <td class="recebido" id="b3recebido"></td>
-        <td class="recebido" id="b4recebido"></td>
-        <td class="recebido" id="mediarecebido"></td>
-        <td class="recebido" id="situacao"></td>
+        <td class="recebido" id="nomerecebido">x</td>
+        <td class="recebido" id="serierecebido">x</td>
+        <td class="recebido" id="materiarecebido">x</td>
+        <td class="recebido" id="b1recebido">x</td>
+        <td class="recebido" id="b2recebido">x</td>
+        <td class="recebido" id="b3recebido">x</td>
+        <td class="recebido" id="b4recebido">x</td>
+        <td class="recebido" id="mediarecebido">x</td>
+        <td class="recebido" id="situacao">x</td>
       </tr>
     </table>
   </div>
