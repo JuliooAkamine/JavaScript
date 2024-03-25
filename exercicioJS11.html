@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Notas</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    
+  }
+  body{
+    background-color: rgb(179, 179, 179);
+  }
+  .divgeral{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    background: white;
+    
+   
+   
+   
+  
+  }
+  #formnotas, #formnotas2{
+    margin-left: 7px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    height: 65px;
+    
+  }
+
+  h1{
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  #name, #materia,#serie{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1.4px solid black;
+    border-radius: 4px;
+   
+  }
+  #media {
+    width: 148px;
+    height: 30px;
+
+  }
+
+  #calculo{
+   
+    height: 30px;
+    margin-left: 15px;
+    width: 90px;
+    border-radius: 4px;
+    border: 1.4px solid black;
+    background-color: rgb(0, 187, 0);
+    color: white;
+    transition: 200ms;
+
+    
+  }
+
+  #calculo:hover{
+    background-color: green;
+    transition: 200ms;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  #b1, #b2, #b3, #b3, #b4, #media{
+    width: 133px;
+    height: 30px;
+    border: 1.4px solid black;
+    padding: 5px;
+    border-radius: 4px;
+    
+  }
+
+  table{
+    width: 100vw;
+    border-spacing:0;
+    font-size: 10px;
+    
+    
+
+  }
+  #formnotas2{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #container-result{
+    width: fit-content;
+    background: white;
+    
+
+    
+  
+  }
+
+  #col-labels{
+    background-color: green;
+    
+
+ 
+  }
+
+  td{
+   text-align: center;
+   width: 40px;
+   padding: 8px;
+   color: white;
+   font-weight: 500;
+  
+  }
+
+  .recebido{
+    color: black;
+  }
+  @media screen and (max-width:830px){
+    #container-result{
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width:640px) {
+    #formnotas2{
+      margin-top: 60px;
+
+    }
+
+    
+    table{
+      font-size: 12px;
+    }
+    
+  }
+
+  @media screen and (max-width:440px) {
+    #formnotas2{
+      margin-top: 100px;
+
+    }
+
+    #container-result{
+      margin-top: 105px;
+      
+    }
+
+    table{
+      font-size: 8px;
+    }
+    
+  }
+
+</style>
+<body>
+  <!-- formulario para cadastro das notas -->
+  <div id="container-form">
+    <h1>Cadastro de Notas</h1>
+    <form action="#" id="formnotas">
+      <div class="divgeral">
+        <label for="#">Nome Completo:</label>
+        <input type="text" id="name">
+      </div>
+      <div class="divgeral">
+        <label for="#">Série:</label>
+        <select name="serie" id="serie">
+          <option value="1EM">1EM</option>
+          <option value="2EM">2EM</option>
+          <option value="3EM">3EM</option>
+        </select>
+      </div>
+      <div class="divgeral">
+        <label for="#">Matéria:</label>
+        <select name="materia" id="materia">
+          <option value="Português">Português</option>
+          <option value="Matemática">Matemática</option>
+          <option value="Geografia">Geografia</option>
+          <option value="Física">Física</option>
+          <option value="Ed Fisíca">Ed Fisíca</option>
+          <option value="Historia">Historia</option>
+          <option value="Quimica">Quimica</option>
+          <option value="Sociologia">Sociologia</option>
+        </select>
+      </div>
+    </form>
+    <!-- Formulario para cadastro2 -->
+    <form action="#" id="formnotas2">
+      <div class="divgeral">
+        <label for="#">Bimestre 1</label>
+        <input max="10" type="number" id="b1" >
+      </div>
+      <div class="divgeral">
+        <label for="#">Bimestre 2</label>
+        <input max="10" type="number" id="b2" >
+      </div>
+      <div class="divgeral">
+        <label for="#">Bimestre 3</label>
+        <input max="10" type="number" id="b3" >
+      </div>
+      <div class="divgeral">
+        <label for="#">Bimestre 4</label>
+        <input max="10" type="number" id="b4" >
+      </div>
+
+      <div class="divgeral">
+        <label for="#">Média:</label>
+        <input type="number" id="media" >
+      </div>
+      <div id="divgeral">
+        <p>ㅤ</p>
+        <input id="calculo" type="submit" value="enviar">
+
+      
+    </form>
+  </div>
+  
+  <div id="container-result" >
+    <h1>Relatório</h1>
+    <table>
+    
+      <tr id="col-labels">
+        <td>Nome Completo</td>
+        <td>Série</td>
+        <td>Matéria</td>
+        <td>B1</td>
+        <td>B2</td>
+        <td>B3</td>
+        <td>B4</td>
+        <td>Média</td>
+        <td>Situação</td>
+      </tr>
+      <tr>
+        <td class="recebido" id="nomerecebido"></td>
+        <td class="recebido" id="serierecebido"></td>
+        <td class="recebido" id="materiarecebido"></td>
+        <td class="recebido" id="b1recebido"></td>
+        <td class="recebido" id="b2recebido"></td>
+        <td class="recebido" id="b3recebido"></td>
+        <td class="recebido" id="b4recebido"></td>
+        <td class="recebido" id="mediarecebido"></td>
+        <td class="recebido" id="situacao"></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <script src="js/exercicionotas.js"></script>
+</body>
+</html>
