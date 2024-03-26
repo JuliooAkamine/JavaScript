@@ -153,7 +153,9 @@
             <a href="#about">Quem Somos</a>
             <a href="#contact">Fale Conosco</a>
           </div>
-          <a href="#" class="icon" onclick="menu()">
+
+          <a href="#" class="icon" >
+            <!-- onclick="menu()" -->
             <i class="fa fa-bars"></i>
           </a>
         </div>
@@ -172,14 +174,28 @@
     </main>
 
     <script>
-      function menu() {
-        var menu = document.getElementById("menu");
+      const icon = document.getElementsByClassName("icon")
+      const menu = document.getElementById("menu")
+
+      icon[0].addEventListener('click' , ()=>{
         if (menu.style.display == "block") {
-          menu.style.display = "none";
-        } else {
-          menu.style.display = "block";
-        }
-      }
+           menu.style.display = "none";
+           
+         } else {
+           menu.style.display = "block";
+         }
+      })
+
+     
+     
+      //  function menu() {
+      //   var menu = document.getElementById("menu");
+      //   if (menu.style.display == "block") {
+      //     menu.style.display = "none";
+      //   } else {
+      //     menu.style.display = "block";
+      //   }
+      //}
     </script>
   </body>
 </html>
