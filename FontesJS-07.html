@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fontes</title>
-</head>
-<style>
-    #teste01{
-        background-color: blue;
+  </head>
+  <style>
+    #teste01 {
+      background-color: blue;
+      transition: 600ms;
+      width: auto;
+      text-align: center;
+      color: white;
+      padding: 15px;
     }
-    #borda{
-        width: 100px;
-        height: 100px;
-        background-color: blue;
-        transition: 400ms;
+    #borda {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: 400ms;
     }
-</style>
-<body>
+  </style>
+  <body>
     <h1>Fontes</h1>
 
     <button onclick="aumenta();">Aumentar Fonte</button>
     <button onclick="diminuir();">Diminui Fonte</button>
 
     <p id="teste01">Olá mundo</p>
-    
+
     <button onclick="aumentarborda()">aumentar borda</button>
-    <p id="borda" ></p>
+    <p id="borda"></p>
 
     <script>
-        var fonte = 16;
-        var borda = 0;
+      var fonte = 16;
+      var borda = 0;
 
-        function aumentarborda(){
-            borda += 15;
+      function aumentarborda() {
+        borda += 15;
 
-            document.getElementById("borda").style.borderRadius = borda + "px"
-        }
+        document.getElementById("borda").style.borderRadius = borda + "px";
+      }
 
-        function aumenta(){
-            fonte += 2;
+      function aumenta() {
+        fonte += 20;
 
-            document.getElementById("teste01").style.fontSize = fonte + "px";
-        }
+        document.getElementById("teste01").style.fontSize = fonte + "px";
+      }
 
-        function diminuir(){
-            fonte -= 2;
+      function diminuir() {
+        fonte -= 20;
 
-            document.getElementById("teste01").style.fontSize = fonte + "px";
-
-        }
-
-
+        document.getElementById("teste01").style.fontSize = fonte + "px";
+      }
     </script>
-    
-</body>
+  </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Arrays</h1>
+    <p>
+      É uma coleção/lista de dados indexados, ou seja, informações sequenciais
+      comecando em 0 (SEMPRE).
+    </p>
+
+    <script>
+      let massas = ["Pizza", "Raviole", "Esfiha", "Canelone"];
+      let frutas = ["Kiwi", "Figo", "Manga", "Banana", "Abacaxi", "Morango"];
+
+      massas.push("Espaguete");
+      massas[massas.lenght - 1];
+
+      let herois = [];
+
+      herois[0] = "Batman";
+      herois[1] = "Hulk";
+      herois[2] = "Homem de Ferro";
+      herois[3] = "Thor";
+
+      console.log(
+        "o " +
+          herois[2] +
+          " almoça " +
+          massas[3] +
+          " e come " +
+          frutas[5] +
+          " como sobremesa "
+      );
+      let numeroherois = herois.length
+      console.log("quantos herois?"  +numeroherois );
+
+      // sort() = método ou função que ordena o conteudo do array em ordem alfabética
+
+      let massasordenadas = massas.sort()
+
+      console.log(massasordenadas)
+      console.log(frutas.sort())
+
+      //indexof() = método/função que retorna índice do elemento
+
+      console.log(massas.indexOf("Pizza"))
+
+      //reverse() = método / função que inverte totalmente a ordem ex: primeiro vira o ultimo(mas continue em ordem alfabetica)
+
+      console.log(massas.reverse())
+
+      let coisas = [10,"luana", new Date, herois[2], "<h2>Olá mundo</h2> "]
+
+      console.log(coisas[2])
+
+      let programas = [
+        //0     1
+        ["Word", "excel"] ,          // 0
+        ["Photshop", "Ilustrartor"],  // 1
+        ["VsCode", "Sublime"]        // 2  
+
+      ]
+
+      console.log("os programas são " + programas[2][0] + " e " +programas [1][1])
+    </script>
+  </body>
+</html>
