@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numero = prompt("digite um numero");
+
+      for (let i = 1; i <= 10; i++) {
+        let resultado = numero * i;
+
+        if (numero == "") {
+          alert("preencha os dados");
+          window.location.reload(true);
+
+          break;
+        } else if (numero < 1 || numero > 10) {
+          alert("digite um numero entre 1 e 10");
+          window.location.reload(true);
+          break;
+        }
+
+        document.write("" + numero + "X" + i + "= " + resultado + "<br/>");
+      }
+    </script>
+  </body>
+</html>

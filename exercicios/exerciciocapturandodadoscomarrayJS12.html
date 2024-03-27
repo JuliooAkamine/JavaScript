@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+      // let dados = [prompt("Qual o seu nome?"), prompt("Qual a sua idade?"), prompt("Qual o seu email?"), prompt("Qual sua cidade de nascimento?")]
+
+      // document.getElementById("p1").innerText = 'Seu nome é: ' +dados[0]
+      // document.getElementById("p2").innerText = 'Sua idade é:' +dados[1]
+      // document.getElementById("p3").innerText = 'Seu email é: ' +dados[2]
+      // document.getElementById("p4").innerText = 'Sua cidade de nascimento é: ' +dados[3]
+
+      let dados = [];
+
+      dados[0] = prompt("qual o seu nome?");
+      dados[1] = prompt("qual sua idade?");
+      dados[2] = prompt("qual o seu email?");
+      dados[3] = prompt("qual sua cidade de nascimento?");
+
+      alert(
+        "seu nome é " +
+          dados[0] +
+          " | seu email é " +
+          dados[1] +
+          " | seu email é " +
+          dados[2] +
+          " | sua cidade de nascimento é " +
+          dados[3]
+      );
+    </script>
+  </body>
+</html>
