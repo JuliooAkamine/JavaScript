@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrindo maior numero em um array</title>
+</head>
+<body>
+    <script>
+        let  numero = []
+
+        numero[0] = Number(prompt('Digite o prmeiro numero'))
+        numero[1] = Number(prompt('Digite o segundo numero'))
+        numero[2] = Number(prompt('Digite o terceiro numero'))
+        numero[3] = Number(prompt('Digite o quarto numero'))
+        numero[4] = Number(prompt('Digite o quinto numero'))
+
+
+        //Define a ordem do array como crescente
+         numero.sort((a,b) => a - b)
+
+        //Pega o ultimo valor do array que será o numero maior da ordem
+        document.write(numero[4])
+    </script>
+    
+</body>
+</html>

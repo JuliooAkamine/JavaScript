@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa Etaria</title>
+</head>
+<body>
+    <script>
+        alert('Exercício 6: Verificar a faixa etária com base na idade. (de 0 a 12 anos criança, de 13 a 19 anos Adolescente, de 20 a 59 anos adulto e acima de 60 anos idoso.')
+        
+        let faixaEtaria = prompt('Digite sua idade:')
+        
+        if(faixaEtaria <= 12){
+            document.write('<h1>Você é uma criança!!</h1>')
+        }else if(faixaEtaria <= 19){
+            document.write('<h1>Você é um Adolescente!!</h1>')
+        }else if(faixaEtaria <= 59){
+            document.write('<h1>Você é um Adulto!!</h1>')
+        }else if(faixaEtaria >= 60){
+            document.write('<h1>Você é um Idoso</h1>')
+        }
+    </script>
+    
+</body>
+</html>

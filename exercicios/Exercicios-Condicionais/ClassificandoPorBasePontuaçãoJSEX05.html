@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classificando por pontuação</title>
+  </head>
+  <body>
+    <script>
+        alert('Exercício 5: Classificar o grau de um estudante com base na sua pontuação. (Ex: 90 pontos para quem tirou A, 80 pontos pra quem tirou B, 70 pontos para quem tirou C...)')
+      let nota = prompt("Qual foi sua nota? (A-B-C)");
+
+      if (nota === "") {
+        alert("Preencha o campo");
+        window.location.reload(true);
+      } else if (nota === "a" || nota === "A") {
+        document.write("Você recebeu 90 pontos!!");
+      } else if (nota === "b" || nota === "B") {
+        document.write("Você recebeu 80 pontos!!");
+      } else if (nota === "c" || nota === "C") {
+        document.write("Você recebeu 70 pontos!!");
+      }
+    </script>
+  </body>
+</html>
