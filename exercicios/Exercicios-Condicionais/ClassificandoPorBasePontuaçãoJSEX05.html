@@ -8,8 +8,11 @@
   <body>
     <script>
         alert('Exercício 5: Classificar o grau de um estudante com base na sua pontuação. (Ex: 90 pontos para quem tirou A, 80 pontos pra quem tirou B, 70 pontos para quem tirou C...)')
+
+      //declaro minha variavel com um prompt onde meu usuario irá digitar a nota dele
       let nota = prompt("Qual foi sua nota? (A-B-C)");
 
+      //confiro se a nota dele está em branco, se estiver recarrego a página caso contrario faço as condições e escrevo as pontuações atribuidas a cada nota.
       if (nota === "") {
         alert("Preencha o campo");
         window.location.reload(true);

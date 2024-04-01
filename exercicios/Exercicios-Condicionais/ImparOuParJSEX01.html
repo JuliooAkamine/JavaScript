@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação impar ou par</title>
+</head>
+<body>
+    <script>
+        alert(' Exercício 1: Verificar se um número é par ou ímpar.');
+
+        //lógica usada: pego o numero digitado pelo usuario, pego o ultimo numero desse numero digitado pelo usuario e com isso verifico se esse ultimo numero é 2,4,6,8,0 se for = par se não = a impar 
+
+        //crio a variavel do prompt para receber o valor digitado pelo meu usuario
+        let numero = prompt('Digite um numero e verifique se ele é impar ou par');
+
+        //pego o ultimo numero desse numero digitado pelo usuario.
+        let ultimonumero = numero.charAt(numero.length - 1);
+
+        //verifico se o prompt não está preenchido, se não estiver ele alerta o usuario e recarrega.
+        if(numero === ''){
+            alert('campo não preenchido');
+            window.location.reload(true);
+        }
+
+        //faço a verificação da variavel que eu retirei o ultimo numero do numero digitado pelo meu usuario
+        if(ultimonumero == 0 || ultimonumero == 2 || ultimonumero == 4 || ultimonumero == 6 || ultimonumero == 8){
+            document.write('o seu numero é par');
+        }else{
+            document.write('O seu numero é ímpar');
+        }
+    </script>
+    
+</body>
+</html>

@@ -7,9 +7,12 @@
   </head>
   <body>
     <script>
-        alert('Exercício 7: Verificar a categoria de um nadador com base na idade. (Infantil, Juvenil e Adulto)')
-      let nadador = prompt("Você é um nadador, Digite quantos anos você tem:");
+      alert('Exercício 7: Verificar a categoria de um nadador com base na idade. (Infantil, Juvenil e Adulto)')
 
+      //crio o campo onde será digitado a idade do nadador
+      let nadador = prompt("Você é um nadador, Digite quantos anos você tem:");
+      
+      //confiro se a idade é igual a 11,17 e atribuo a faixa etaria correspondente
       if (nadador <= 11) {
         document.write("Você é um nadador Infatil");
       } else if (nadador <= 17) {
@@ -17,6 +20,7 @@
       } else if (nadador > 18) {
         document.write("Você é um nadador Adulto");
       }
+      //confiro se a idade é maior a 18 e atribuo a faixa etaria correspondente
     </script>
   </body>
 </html>

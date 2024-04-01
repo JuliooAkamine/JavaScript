@@ -9,13 +9,18 @@
     <script>
         alert("Exercício 4: Verificar o período do dia com base na hora. (manhã, tarde e noite)")
         
+        //recebo a função new date onde dentro dela ha muitas informações relacionadas a datas
         let agora = new Date();
+        // obtenho a hora do dia
         let hora = agora.getHours();
+        //obtenho os minutos do dia
         let minutos = agora.getMinutes();
+        //obtenho os segundos do dia
         let segundos = agora.getSeconds();
 
         console.log(hora + ":" + minutos + ":" + segundos);
 
+        //faço a condição relativa aos horarios
         if(hora <= 12 ){
             document.write('<h1>Agora está de manhã</h1>')
         }else if(hora <= 18){

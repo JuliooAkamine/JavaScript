@@ -8,9 +8,11 @@
 <body>
     <script>
         alert('Exercício 6: Verificar a faixa etária com base na idade. (de 0 a 12 anos criança, de 13 a 19 anos Adolescente, de 20 a 59 anos adulto e acima de 60 anos idoso.')
-        
+
+        //Crio meu campo para o usuario digitar a idade
         let faixaEtaria = prompt('Digite sua idade:')
         
+        //Vejo se o numero digitado é igual ou menor a 12,19,59 e atribuo a faixa etária correspondente
         if(faixaEtaria <= 12){
             document.write('<h1>Você é uma criança!!</h1>')
         }else if(faixaEtaria <= 19){
@@ -20,6 +22,7 @@
         }else if(faixaEtaria >= 60){
             document.write('<h1>Você é um Idoso</h1>')
         }
+        //Vejo se o numero digitado é igual ou maior a 60 e atribuo a faixa etária correspondente
     </script>
     
 </body>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificar mês</title>
+  </head>
+  <body>
+    <script>
+      //Crio minha variavel onde o usuario irá digitar o mes e saber o numero correspondente
+      let mes = prompt("Digite um mês e saiba o numero correspondente a ele");
+
+      //declaro uma variavel vazia para receber o numero de cada mes
+      let numeromes;
+
+      //declaro o switch para verificar a minha variavel que é o valor digitado pelo usuario e faço os cases
+      switch (mes) {
+        case "janeiro":
+          alert("<h1>Janeiro é o mês 1</h1>");
+          break;
+        
+        case "fevereiro":
+            alert('<h1>Fevereiro é o mês 2</h1>')
+            break
+        case "Março":
+            alert('<h1>Março é o mês 3</h1>')
+            break
+        case "Abril":
+            alert('<h1>Abril é o mês 4</h1>')
+            break
+        case "maio":
+            alert('<h1>maio é o mês 5</h1>')
+            break
+        case "junho":
+            document.write('<h1>junho é o mês 6</h1>')
+            break
+        case "julho":
+            document.write('<h1>julho é o mês 7</h1>')
+            break
+        case "agosto":
+            document.write('<h1>agosto é o mês 8</h1>')
+            break
+        case "setembro": 
+            document.write('<h1>setembro é o mês 9</h1>')
+            break
+        case "outubro":
+            document.write('<h1>outubro é o mês 10</h1>')
+            break
+        case "novembro":
+            document.write('<h1>novembro é o mês 11</h1>')
+            break
+        case "dezembro":
+            document.write('<h1>dezembro é o mês 12</h1>')
+            break
+        default:
+            alert('o mês digitado não existe')
+            window.location.reload(true)
+          break;
+      }
+    </script>
+  </body>
+</html>

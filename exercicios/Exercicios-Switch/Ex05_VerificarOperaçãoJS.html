@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let operacao = prompt('digite uma operação matématica e saiba qual ela é (+, -, *, /)')
+
+        let operacaomatematica
+
+        switch (operacao) {
+            case "+":
+                document.write('A operação digitada é adição')
+                break;
+            case "-":
+                document.write('A operação digitada é subtração')
+                break
+            case "*":
+                document.write('A operação digitada é multiplicação')
+                break
+            case "/":
+                document.write('A operação digitada é divisão')
+                break
+        
+            default:
+                alert('Digite uma dessas operações matemáticas (+, -, *, /)')
+                window.location.reload(true)
+                break;
+        }
+    </script>
+    
+</body>
+</html>

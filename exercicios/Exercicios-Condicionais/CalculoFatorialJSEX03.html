@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <script>
-        alert('Exercício 3: Calcular o fatorial de um número.')
+      alert("Exercício 3: Calcular o fatorial de um número.");
 
-        let fatorial = 'Digite um numero e saiba o fatorial dele:'
+      let numero = prompt("digite um numero e saiba o fatorial");
+      let fatorial = 1;
 
-        
+     //verifica se o campo do prompt esta vazio, se estiver alerta o usuario a preencher, quando o usuario clicar em (ok) recarrega a página
+      if(numero === ''){
+        alert('Preencha o campo para continuar')
+        window.location.reload(true)
+      }
+
+      //verificando se numero é 0 ou 1, se for retorno 1 porque o fatorial de 0 e 1 sempre será
+      if (numero === 0 || numero === 1) {
+        fatorial = 1;
+      } else {
+        //iteramos de 2 até o valor do prompt digitado pela pessoa
+        //utilizo o *= para que toda vez que incrementar um numero o fatorial seja multiplicado por ele e guardado na variavel
+        for (let i = 2; i <= numero; i++) {
+          fatorial *= i;
+        }
+      }
+
+      document.write(
+        "<h1>O fatorial de " + numero + " é " + fatorial + "</h1>"
+      );
     </script>
-</body>
+  </body>
 </html>

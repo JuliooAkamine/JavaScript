@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de palindromo</title>
+</head>
+<body>
+    <script>
+        alert('Exercício 2: Verificar se uma palavra é um palíndromo (palavras que se escrever de ao contrario derá a mesma palavra). Ex: Ana, Renner...');
+
+        //Lógica usada: Pego o valor digitado pelo usuario, converto ele em uma variavel sem espaços e com letras somente minusculas e reverto ela, confiro se o valor digitado pelo usuario é igual a minha variavel sem espaços com letras minusculas revertida
+        
+        //Declaro uma variavel no qual vai receber a palavra digitada pela pessoa
+        let palindromo = prompt('Digite uma palavra e veja se ela é um palíndromo (palavras que se escrever de ao contrario derá a mesma palavra). Ex: Ana, Renner...');
+
+        //Declaro outra variavel recebendo a variavel com o valor digitado pela pessoa e converto ela para letras minusculas e retiro os espaços em branco utilizando o replace(/\s/g,'')
+        let palindromominusculo = palindromo.toLowerCase().replace(/\s/g, '');
+
+
+        //reverto a variavel do valor digitado pelo usuario com letras minusculas e sem espaço para fazer a verificação do palíndromo
+        let palindromoreverse = palindromominusculo.toLowerCase().split('').reverse().join('');
+        
+        if(palindromo === ''){
+            alert('Campo não preenchido')
+            window.location.reload(true);
+        }
+        //Crio uma condicional verificando se a palavra digitada pela pessoa é igual ou não a mesma palavra ao contrario.
+        if(palindromominusculo === palindromoreverse){
+            document.write('A palavra '+palindromo+' é um palíndromo');
+        }else{
+            document.write('A palavra '+palindromo+' não é um palíndromo');
+        }
+
+       
+    </script>
+    
+</body>
+</html>
