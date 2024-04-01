@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Array</title>
+</head>
+<body>
+    <script>
+        alert('Exercício 1: Calcular a média de números em um array.')
+        
+        //Aqui declaro meu array
+        const numeros = [3,5,9,2,10];
+        //Declaro minha variavel inicial do calculo como 0
+        let calculo = 0;
+
+        //Declaro uma variavel i como 0 e se i for menor que o comprimento do meu array, incremento i ate que seja menor que o comprimento do meu array, isso garente que o loop passe por todos elementos do array
+        for(let i = 0; i<numeros.length; i++){
+            //A cada iteração a minnha variavel vai somar um array com o outro e armazena-la
+            //isso irá somar todos elementos do array
+            calculo+= numeros[i]
+        }
+
+        //declaro minha variavel para saber a media que sera todos numeros somados do array divido pelo tamanho do array
+        const numeromedio = calculo / numeros.length;
+
+        //Exibo meu resultado
+        document.write("Meu array é: "+numeros+ "</br>")
+        document.write("A média do array é: " +numeromedio)
+    </script>
+</body>
+</html>

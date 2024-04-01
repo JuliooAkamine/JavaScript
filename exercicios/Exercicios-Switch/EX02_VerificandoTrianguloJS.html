@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Triângulo</title>
+</head>
+<body>
+    <script>
+        alert('Exercício 2: Verificar o tipo de triângulo com base nos comprimentos dos lados. (Equilátero, Isósceles, Escaleno)')
+        
+        //Declaro minhas variaveis onde o usuario colocará o valor dos tres lados do triângulo.
+
+        let trianguloLado1 = prompt('digite o primeiro lado de seu triângulo')
+
+        let trianguloLado2 = prompt('digite o segundo lado de seu triângulo')
+
+        let trianguloLado3 = prompt ('digite o terceiro lado do seu triângulo')
+
+        
+        //Coloco minha condição como true para avançar somente se for verdade e faço as validações dos tipos de triãngulo
+        switch(true) {
+    case (trianguloLado1 === trianguloLado2 && trianguloLado2 === trianguloLado3):
+        document.write('Esse é um Triângulo Equilátero');
+        break;
+    case (trianguloLado1 === trianguloLado2 || trianguloLado1 === trianguloLado3 || trianguloLado2 === trianguloLado3):
+        document.write('Esse é um Triângulo Isósceles');
+        break;
+    default:
+        document.write('Esse é um Triângulo Escaleno');
+}
+
+        
+    </script>
+</body>
+</html>

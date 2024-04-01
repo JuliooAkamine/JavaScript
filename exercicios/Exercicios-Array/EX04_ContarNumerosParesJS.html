@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contando Pares</title>
+  </head>
+  <body>
+    <script>
+      alert("Exercício 4: Contar o número de elementos pares em um array.");
+
+    
+
+      const meuArray = [0, 2, 18, 4, 5, 6, 7, 22, 9, 10];
+
+      const numeroPares = meuArray.filter((numero) => numero % 2 === 0).length;
+
+      document.write('Meu array é:' +meuArray +'<br/>')
+      document.write("O número de elementos pares no array é:", numeroPares);
+    </script>
+  </body>
+</html>

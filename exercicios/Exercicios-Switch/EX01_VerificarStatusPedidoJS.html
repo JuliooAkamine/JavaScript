@@ -9,8 +9,10 @@
     <script>
         alert(' Exercício 1: Verificar o status de um pedido com base no seu código. (Aguardando pagamento, Produção, Enviado, Entregue).')
 
-        let pedido('Digite o código do seu pedido e saiba o status dele.')
+        //Declaro minha variavel que recebe o valor digitado pelo usuario
+        let pedido = prompt('Digite o código do seu pedido e saiba o status dele (1-5).')
 
+        //declaro meu switch como a minha variavel com o valor digitado pelo usuario e faço meus cases
         switch (pedido) {
             case "1":
                 document.write('O seu pedido está no centro logístico de jundiaí')
@@ -31,6 +33,8 @@
         
             default:
                 alert('O numero desse pedido não existe')
+                //window.location.reload(true) - recarrega a página
+                window.location.reload(true);
                 break;
         }
     </script>

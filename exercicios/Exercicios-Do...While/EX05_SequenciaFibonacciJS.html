@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci</title>
+  </head>
+  <body>
+    <script>
+      alert(
+        "Exercício 5: Gerar uma sequência de Fibonacci com 10 elementos usando a estrutura do while."
+      );
+
+      //Defino o numero inical anterior como 0
+      let numeroanterior = 0;
+      //Defino o numero inical atual como 1
+      let numeroatual = 1;
+      //Declaro minha variavel sem nada
+      let numeroseguinte;
+
+      document.write("Sequência de Fibonacci:");
+
+      do {
+        document.write(" " + numeroanterior);
+        //defino minha variavel vazia como o numero anterior somado com o atual
+        numeroseguinte = numeroanterior + numeroatual;
+        //defino meu numero anterior como o atual
+        numeroanterior = numeroatual;
+        //trago a soma da variavel anterior e atual a minha variavel atual
+        numeroatual = numeroseguinte;
+        //Defino para o loop percorrer somente ate 34
+      } while (numeroanterior <= 34);
+    </script>
+  </body>
+</html>

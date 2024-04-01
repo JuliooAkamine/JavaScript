@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert('Exercício 2: Calcular o fatorial de um número usando a estrutura do while.')
+
+        //Declaro uma variavel onde receberei o valor digitado pelo meu usuario
+        let numero = Number(prompt('Digite um numero e saiba o fatorial dele'));
+        //declaro meu valor inicial do fatorial como 1
+        let fatorial = 1;
+        //declaro uma variavel i para representar um contador para percorrer os numeros a serem multiplicados
+        let i = 1;
+
+        do {
+            //faço meu valor do fatorial vezes o numero do meu fatorial e armazeno
+            fatorial*=i
+            //incremento para passar para o proximo numero a ser multiplicado
+            i++
+           
+            
+            
+        } while (i<=numero);
+
+        document.write('O fatorial de ' +numero+ ' é ' +fatorial)
+    </script>
+    
+</body>
+</html>
