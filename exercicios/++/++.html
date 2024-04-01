@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivinhe um número de 0 a 10</title>
+  </head>
+
+  <body>
+    <script>
+      alert(
+        "Gere um número aleatório e pede ao usuário para adivinhá-lo. O usuário tem três tentativas para acertar o número:"
+      );
+
+      // Gera um número aleatório entre 0 e 9
+      let random = Math.floor(Math.random() * 10);
+      //Declaro uma variavel com o numero digitado pelo meu usuario
+      let digitado = parseInt(prompt("Adivinhe o número (entre 0 e 9):"));
+
+      //faço minhas condições com até três tentativas do usuario
+      if (digitado === random) {
+        document.write("Você Acertou!");
+      } else {
+        alert("Você Errou");
+        let digitado2 = parseInt(
+          prompt("Você tem mais 2 tentativas. Adivinhe o número:")
+        );
+
+        if (digitado2 === random) {
+          document.write("Você Acertou!");
+        } else {
+          alert("Você Errou");
+          let digitado3 = parseInt(
+            prompt("Você tem mais 1 tentativa. Adivinhe o número:")
+          );
+
+          if (digitado3 === random) {
+            document.write("Você Acertou!");
+          } else {
+            alert(
+              "Você errou e infelizmente seu número de tentativas acabou, O numero era " +
+                random
+            );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
