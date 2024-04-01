@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando dia da semana</title>
+</head>
+<body>
+    <script>
+        alert('Exercício 3: Verificar o dia da semana com base no número')
+        //declaro uma variavel para receber o valor digitado no prompt do meu usuario
+        let dia = prompt('digite um numero e saiba qual dia da semana ele é (de 1 a 7)')
+        
+      
+        //coloco minha variavel com o valor digitado pelo usuario como switch e faço meus cases
+        switch (dia) {
+            case '1':
+                document.write('<h>O dia 1 é domingo</h>')
+                break;
+            case '2':
+                document.write('O dia 2 é segunda-feira')
+                break
+            case '3':
+                document.write('O dia 3 é terça-feira')
+                break
+            case '4':
+                document.write('O dia 4 é Quarta-feira')
+                break
+            case '5':
+                document.write('O dia 5 é Quinta-feira')
+                break
+            case '6':
+                document.write('O dia 6 é Sexta-feira')
+                break
+            case '7':
+                document.write('O dia 7 é Sabado')
+                break
+        
+            default:
+                alert('digite um numero entre 1 e 7 e saiba a qual dia da semana ele se refere')
+                window.location.reload(true)
+                break;
+        }
+    </script>
+
+    
+</body>
+</html>
